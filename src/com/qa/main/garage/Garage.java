@@ -31,9 +31,9 @@ public abstract class Garage {
 		return garageName;
 	}
 
-	public int getDoorCount() {
-		return doorCount;
+	// public int getDoorCount() {
+	// return doorCount;
 
-	}
+	// }
 
 }

@@ -2,7 +2,7 @@ package com.qa.main.garage.vehicle;
 
 import com.qa.main.garage.Garage;
 
-public class Vehicle extends Garage {
+public class Vehicle extends Garage implements Mobility {
 
 	// ***********//
 	// ATTRIBUTES //
@@ -44,6 +44,10 @@ public class Vehicle extends Garage {
 
 	public void driving() {
 		this.isDriving = true;
+	}
+
+	public void parked() {
+		this.isParked = true;
 	}
 
 	// Read only - these wont change
