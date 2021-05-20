@@ -9,15 +9,20 @@ public class Motorcycle extends Vehicle {
 	// ************//
 	// CONSTRUCTOR //
 	// ************//
-	public Motorcycle(String vehicleType, String classType, boolean isParked, boolean isDriving, int tireCount,
-			int doorCount) {
-		super(vehicleType, classType, isParked, isDriving, tireCount, doorCount); // object class
+	public Motorcycle(String vehicleType, String classType, int tireCount, int doorCount) {
+		super(vehicleType, classType, tireCount, doorCount); // object class
 
 	}
 
 	@Override
 	public void driving() {
 		System.out.print("Motorcyle has lef the garage!");
+	}
+
+	@Override
+	public void parked() {
+		System.out.print("The Vehicle is parked " + this.getGarageName());
+
 	}
 
 }

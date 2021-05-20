@@ -1,6 +1,6 @@
 package com.qa.main.garage;
 
-public abstract class Garage {
+public class Garage {
 
 	// ***********//
 	// ATTRIBUTES //

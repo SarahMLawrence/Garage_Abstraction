@@ -2,15 +2,13 @@ package com.qa.main.garage.vehicle;
 
 import com.qa.main.garage.Garage;
 
-public class Vehicle extends Garage implements Mobility {
+public abstract class Vehicle extends Garage implements Mobility {
 
 	// ***********//
 	// ATTRIBUTES //
 	// ***********//
 	private String vehicleType;
 	private String classType;
-	private boolean isParked;
-	private boolean isDriving;
 	private int tireCount;
 	private int doorCount;
 
@@ -21,34 +19,25 @@ public class Vehicle extends Garage implements Mobility {
 		super();
 		this.vehicleType = "??? - generic";
 		this.classType = "??? - generic";
-		this.isParked = true;
-		this.isDriving = false;
 		this.tireCount = 2;
 		this.doorCount = 0;
 
 	}
 
-	public Vehicle(String vehicleType, String classType, boolean isParked, boolean isDriving, int tireCount,
-			int doorCount) {
+	public Vehicle(String vehicleType, String classType, int tireCount, int doorCount) {
 		this.vehicleType = vehicleType;
 		this.classType = classType;
-		this.isParked = isParked;
-		this.isDriving = isDriving;
 		this.tireCount = tireCount;
 		this.doorCount = doorCount;
 	}
 
+	public abstract void parked();
+
+	public abstract void driving();
+
 	// ********//
 	// METHODS //
 	// ********//
-
-	public void driving() {
-		this.isDriving = true;
-	}
-
-	public void parked() {
-		this.isParked = true;
-	}
 
 	// Read only - these wont change
 	public String getVehicleType() {
