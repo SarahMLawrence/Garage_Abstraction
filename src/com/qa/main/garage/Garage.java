@@ -1,6 +1,6 @@
 package com.qa.main.garage;
 
-public class Garage {
+public abstract class Garage {
 
 	// ***********//
 	// ATTRIBUTES //
@@ -11,6 +11,17 @@ public class Garage {
 	// ************//
 	// CONSTRUCTOR //
 	// ************//
+	public Garage() {
+		super();
+		this.garageName = "Sarah's Garage";
+		this.doorCount = 3;
+
+	}
+
+	public Garage(String garageName, int doorCount) {
+		this.garageName = garageName;
+		this.doorCount = doorCount;
+	}
 
 	// ********//
 	// METHODS //
@@ -18,6 +29,11 @@ public class Garage {
 
 	public String getGarageName() {
 		return garageName;
+	}
+
+	public int getDoorCount() {
+		return doorCount;
+
 	}
 
 }
