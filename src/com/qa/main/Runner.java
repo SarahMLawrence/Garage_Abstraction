@@ -1,14 +1,17 @@
 package com.qa.main;
 
+import com.qa.main.garage.Garage;
+
 public class Runner {
 
 	// attribute
-	public static String msg = "Welcome to Sarah's Garage";
 
 	// Main method - starting
 	public static void main(String[] args) {
 
-		System.out.println(msg);
+		Garage myGarage = new Garage("Sarah's Garage", 3);
+		System.out.println(" Welcome to " + myGarage.getGarageName());
+		System.out.println(myGarage.getGarageName() + " has " + myGarage.getDoorCount());
 
 	}
 
