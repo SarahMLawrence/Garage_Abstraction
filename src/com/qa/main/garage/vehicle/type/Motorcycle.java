@@ -16,13 +16,20 @@ public class Motorcycle extends Vehicle {
 
 	@Override
 	public void driving() {
-		System.out.print("Motorcyle has lef the garage!");
+		System.out.print("Motorcyle has left " + this.getGarageName());
 	}
 
 	@Override
 	public void parked() {
 		System.out.print("The Vehicle is parked " + this.getGarageName());
 
+	}
+
+	@Override
+	public String toString() {
+		return "Motorcycle [getVehicleType()=" + getVehicleType() + ", getClassType()=" + getClassType()
+				+ ", toString()=" + super.toString() + ", getGarageName()=" + getGarageName() + ", getClass()="
+				+ getClass() + ", hashCode()=" + hashCode() + "]";
 	}
 
 }
