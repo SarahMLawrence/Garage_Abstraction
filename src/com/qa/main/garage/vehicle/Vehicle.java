@@ -45,9 +45,16 @@ public abstract class Vehicle extends Garage implements Mobility {
 	}
 
 	public String getClassType() {
-		return vehicleType;
+		return classType;
 	}
 
+	public int getTireCount() {
+		return tireCount;
+	}
+
+	public int getDoorCount() {
+		return doorCount;
+	}
 	/*
 	 * @Override public String toString() { return "Vehicle [vehicleType=" +
 	 * vehicleType + ", classType=" + classType + ", tireCount=" + tireCount +
