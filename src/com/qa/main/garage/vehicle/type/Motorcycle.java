@@ -27,9 +27,7 @@ public class Motorcycle extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Motorcycle [getVehicleType()=" + getVehicleType() + ", getClassType()=" + getClassType()
-				+ ", toString()=" + super.toString() + ", getGarageName()=" + getGarageName() + ", getClass()="
-				+ getClass() + ", hashCode()=" + hashCode() + "]";
+		return "Motorcycle ";
 	}
 
 }

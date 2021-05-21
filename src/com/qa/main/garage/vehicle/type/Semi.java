@@ -23,12 +23,11 @@ public class Semi extends Vehicle {
 		System.out.print("The Semi is driving " + this.getGarageName());
 
 	}
-
-	@Override
-	public String toString() {
-		return "Semi [getVehicleType()=" + getVehicleType() + ", getClassType()=" + getClassType() + ", toString()="
-				+ super.toString() + ", getGarageName()=" + getGarageName() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + "]";
-	}
+	/*
+	 * @Override public String toString() { return "Semi [getVehicleType()=" +
+	 * getVehicleType() + ", getClassType()=" + getClassType() + ", toString()=" +
+	 * super.toString() + ", getGarageName()=" + getGarageName() + ", getClass()=" +
+	 * getClass() + ", hashCode()=" + hashCode() + "]"; }
+	 */
 
 }

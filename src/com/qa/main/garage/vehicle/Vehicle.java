@@ -48,10 +48,10 @@ public abstract class Vehicle extends Garage implements Mobility {
 		return vehicleType;
 	}
 
-	@Override
-	public String toString() {
-		return "Vehicle [vehicleType=" + vehicleType + ", classType=" + classType + ", tireCount=" + tireCount
-				+ ", doorCount=" + doorCount + "]";
-	}
+	/*
+	 * @Override public String toString() { return "Vehicle [vehicleType=" +
+	 * vehicleType + ", classType=" + classType + ", tireCount=" + tireCount +
+	 * ", doorCount=" + doorCount + "]"; }
+	 */
 
 }

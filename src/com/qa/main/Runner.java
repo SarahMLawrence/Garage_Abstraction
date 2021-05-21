@@ -27,9 +27,9 @@ public class Runner {
 		y.driving();
 
 		myGarage.addVehicle(x);
+		myGarage.addVehicle(y);
 
 		myGarage.whosAtSarahsGarage();
-
 		// myGarage.deleteVehicle(x);
 
 	}
