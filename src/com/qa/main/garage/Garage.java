@@ -35,7 +35,8 @@ public class Garage {
 
 	public void addVehicle(Object vehicle) {
 		// add vehicle by id ??
-		sarahsGarage.add(0, vehicle);
+		sarahsGarage.add(vehicle);
+
 	}
 
 	public void deleteVehicle(Vehicle vehicle) {
@@ -44,8 +45,10 @@ public class Garage {
 
 	public void whosAtSarahsGarage() {
 
+		System.out.print("\nWelcome! Here is the list of vehicles currently at " + this.garageName + "\n");
+
 		for (int i = 0; i < sarahsGarage.size(); i++) {
-			System.out.println(sarahsGarage.get(i).toString());
+			System.out.println(sarahsGarage.get(i));
 		}
 
 	}
