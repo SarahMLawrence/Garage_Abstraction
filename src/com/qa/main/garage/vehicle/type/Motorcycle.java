@@ -14,6 +14,7 @@ public class Motorcycle extends Vehicle {
 
 	}
 
+	//
 	@Override
 	public void driving() {
 		System.out.print("Motorcyle has left " + this.getGarageName());
@@ -27,7 +28,8 @@ public class Motorcycle extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Motorcycle ";
+		return ("Vehicle Type: " + this.getVehicleType() + "\n" + "Class Type: " + this.getClassType() + "\n"
+				+ "Tire Count: " + this.getTireCount() + "\n" + "Door Count: " + this.getDoorCount());
 	}
 
 }

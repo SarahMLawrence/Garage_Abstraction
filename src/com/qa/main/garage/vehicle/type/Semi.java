@@ -30,4 +30,11 @@ public class Semi extends Vehicle {
 	 * getClass() + ", hashCode()=" + hashCode() + "]"; }
 	 */
 
+	@Override
+	public String toString() {
+		return ("\nVehicle Type: " + Semi.this.getVehicleType() + "\n" + "Class Type: " + Semi.this.getClassType()
+				+ "\n" + "Tire Count: " + Semi.this.getTireCount() + "\n" + "Door Count: " + Semi.this.getDoorCount());
+
+	}
+
 }

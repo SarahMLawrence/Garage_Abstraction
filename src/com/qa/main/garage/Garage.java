@@ -31,9 +31,9 @@ public class Garage {
 	// ********//
 
 	// Create new list to store vehicles in
-	List<Object> sarahsGarage = new ArrayList<Object>();
+	List<Vehicle> sarahsGarage = new ArrayList<Vehicle>();
 
-	public void addVehicle(Object vehicle) {
+	public void addVehicle(Vehicle vehicle) {
 		// add vehicle by id ??
 		sarahsGarage.add(vehicle);
 
@@ -41,11 +41,15 @@ public class Garage {
 
 	public void deleteVehicle(Vehicle vehicle) {
 
+		for (int i = 0; i < sarahsGarage.size(); i++) {
+			System.out.println("\nVehicle " + i + " has left" + this.garageName + sarahsGarage.remove(i));
+		}
+
 	}
 
 	public void whosAtSarahsGarage() {
 
-		System.out.print("\nWelcome! Here is the list of vehicles currently at " + this.garageName + "\n");
+		System.out.print("\n\nWelcome! Here is the list of vehicles currently at " + this.garageName + "\n\n");
 
 		for (int i = 0; i < sarahsGarage.size(); i++) {
 			System.out.println(sarahsGarage.get(i));
